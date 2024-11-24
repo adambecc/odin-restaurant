@@ -3,10 +3,12 @@ export default function loadContactPage() {
     content.innerHTML = '';
 
     const headline = document.createElement('h1');
-    headline.textContent = 'Contact Us';
+    headline.textContent = 'Contact Us!';
+    headline.classList.add('contact-headline'); 
     content.appendChild(headline);
 
     const contactInfo = document.createElement('p');
-    contactInfo.textContent = 'Email: contact@restaurant.com | Phone: +123456789';
+    contactInfo.textContent = 'Email: restaurant@odin.org | Phone: +370 (777) 666 999';
+    contactInfo.classList.add('contact-info'); 
     content.appendChild(contactInfo);
 }
